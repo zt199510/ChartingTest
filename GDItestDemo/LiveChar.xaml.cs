@@ -214,11 +214,22 @@ namespace GDItestDemo
                 for (int i = 1; i < points.Count; i++)
                 {
                     Point pre;
-                         Point next;
+                    Point next;
                     if (i == 1)
                     {
-                        pre = new Point((points[i - 1].X + points[i].X) / 2, points[i ].Y);  //控制点
-                        next = new Point( points[i].X , points[i].Y);     //控制点
+                        var CurrentPoint = GetSpeedOrPower(points[i]);
+                        var  GetCurrentPoint= GetSpeedOrPower(points[i - 1]);
+                        if (CurrentPoint.SpeedNum- GetCurrentPoint.SpeedNum  < 10)
+                        {
+                            pre = new Point((points[i - 1].X + points[i].X) / 2, points[i ].Y);  //控制点
+                            next = new Point(points[i].X, points[i].Y);     //控制点
+                        }
+                        else
+                        {
+                            pre = new Point((points[i - 1].X + points[i].X) / 2, points[i-1].Y);  //控制点
+                            next = new Point((points[i - 1].X + points[i].X) / 2, points[i-1].Y);     //控制点
+                        }
+                 
                     }
                     else
                     {
