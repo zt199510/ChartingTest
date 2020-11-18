@@ -1,0 +1,17 @@
+﻿<Window x:Class="GDItestDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GDItestDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800" Loaded="Window_Loaded" >
+    <Grid Background="Transparent">
+        <ComboBox Width="100" Height="20" VerticalAlignment="Top">
+            <ComboBoxItem>曲线</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">直线</ComboBoxItem>
+            <ComboBoxItem>分段</ComboBoxItem>
+        </ComboBox>
+        <local:LiveChar  Grid.Row="2" ></local:LiveChar>
+    </Grid>
+</Window>
