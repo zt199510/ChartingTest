@@ -7,7 +7,8 @@
 ![Screenshot](https://github.com/zt199510/ChartingTest/blob/master/GDItestDemo/111.gif)
 
 ### 项目说明
-  该项目为C#构建的Windows桌面客户端以及移动端和网页端的项目实践, 旨在为C#开发人员提供一种项目构建的编码参考, 在面对目前稀缺的网络资源环境, 贡献出本人的微小力量。
+  
+  该项目为C#构建的Windows桌面客户端,在面对目前图像控件稀缺的网络资源环境, 贡献出本人的微小力量。
 
 
 ### 联系我
