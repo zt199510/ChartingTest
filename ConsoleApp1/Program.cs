@@ -8,8 +8,10 @@ namespace ConsoleApp1
        static int[] Arr = new int[50];
         static void Main(string[] args)
         {
-           
-           
+            //排序分为平均复杂度和最坏情况            
+            //排序的平均复杂度和最坏情况下的复杂度都是O（n^2）所以所有的算法都有最坏情况复杂度和平均复杂度，一般使用平均复杂度
+
+
             Stopwatch stopwatch = new Stopwatch();
             Refresh();
             stopwatch.Start();
@@ -107,7 +109,11 @@ namespace ConsoleApp1
             //    Console.Write(item + ",");
             //}
         }
-
+        /// <summary>
+        /// 简单选择是从未排序的中找最小的顺序放在已排好的后面，直至完成和插入的区别是，是拿一个数据与排好序的数列比较然后插入
+        /// 简单选择比较次数是n^2，移动次数是n^2   平均和最坏复杂度都是n^2，是因为操作和实现简单，所以叫简单选择
+        /// </summary>
+        /// <param name="list"></param>
         static void SimpleSelectSort(int[] list)
         {
             int sum = 0;
@@ -132,7 +138,11 @@ namespace ConsoleApp1
             //}
 
         }
-
+        /// <summary>
+        /// 快排是任取一个数，以它为基准，大的放一边，小的放另一边，一次重复直至完成排序，它是对冒泡的排序，最坏的情况是n^2，平均的情况是nlog2N
+        /// 
+        /// </summary>
+        /// <param name="list"></param>
         static void SelectSort(int[] list)
         {
             int sum = 0;
