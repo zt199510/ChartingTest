@@ -10,8 +10,6 @@ namespace ConsoleApp1
         {
             //排序分为平均复杂度和最坏情况            
             //排序的平均复杂度和最坏情况下的复杂度都是O（n^2）所以所有的算法都有最坏情况复杂度和平均复杂度，一般使用平均复杂度
-
-
             Stopwatch stopwatch = new Stopwatch();
             Refresh();
             stopwatch.Start();
